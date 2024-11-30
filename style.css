@@ -190,7 +190,7 @@ section.summary {
 
 /* desktop */
 
-@media (min-width: 50em) {
+@media (min-width: 40em) {
     body {
         display: grid;
         place-items: center;
@@ -202,6 +202,11 @@ section.summary {
         border-radius: 30px;
         background-color: var(--White);
         gap: 0;
+    }
+
+
+    section:is(.result, .summary)>h2 {
+        font-size: 1.5rem;
     }
 
     section.result {
@@ -218,8 +223,13 @@ section.summary {
             }
         }
 
+        .great {
+            font-size: 2rem;
+        }
+
         & p {
-            max-width: 220px;
+            max-width: 280px;
+            font-size: 1.2rem;
         }
     }
 
